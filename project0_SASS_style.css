@@ -1,0 +1,45 @@
+/* project0 SASS file demonstrating use of SCSS variable, SCSS nesting and SCSS inheritance
+  This style file is intended for formatting of "skills.html" web-page */
+/* SCSS nesting                     */
+div {
+  font-family: "Times New Roman", "sans-serif";
+}
+div ol, div ul {
+  font-family: "Arial", "sans-serif";
+  color: gray;
+}
+
+/* inheritance */
+.format_grid_td, .format_grid_th {
+  font-family: sans-serif;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+}
+
+.format_grid_th {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.format_grid_td {
+  font-size: 18px;
+  font-weight: normal;
+  background-color: white;
+}
+
+/* check media and adjust font sizes */
+@media (min-width: 751px) {
+  .pgf_font {
+    font-size: 18px;
+    color: blue;
+  }
+}
+@media (max-width: 750px) {
+  .pgf_font {
+    font-size: 12px;
+    color: black;
+  }
+}

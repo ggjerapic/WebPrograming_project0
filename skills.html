@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="project0_style.css">
+    <link rel="stylesheet" href="project0_SASS_style.css">
+</head>
+<body>
+    <!-- use bootstrap with divisions into "container" -> "row" -> "col"
+        the body of the web-page is treated as a single container -->
+    <div class="container">
+        <!-- <div class="row table_header1">
+                    <div class="col-3"> <a href="index.html">Home</a></div>
+                    <div class="col-3">  <a href="short_bio.html">Short Bio</a></div>
+                    <div class="col-3">  <a href="education.html">Education</a></div>
+                    <div class="col-3">  <a href="skills.html" style="font-size: larger;
+                    color: blue">Certifications and Skills</a></div>
+        </div>  -->
+
+        <!-- use Bootstrap basic component "navbar", see https://getbootstrap.com/2.3.2/components.html#navbar -->
+        <div class="navbar">
+            <div class = "navbar-inner">
+                <!-- <a class="brand" href="index.html">Home</a> # in case we want to have a brand web page -->
+                <ul class = "nav">
+                    <li class="col-3">  <a href="index.html">Home</a></li>
+                    <li class="col-3">  <a href="short_bio.html">Short Bio</a></li>
+                    <li class="col-3">  <a href="education.html">Education</a></li>
+                    <li class="active col-3">  <a href="skills.html" style="font-size: larger;
+                    color: blue">Certifications and Skills</a></li>
+                </ul>
+            </div>
+        </div> <!-- end of div class="navbar" -->
+
+        <div class="row table_header2">
+            <div class="col-4" id="padding_type1_photo">
+                 <img src="project0/GG-photo.jpg" alt="Photo" width="150px" height=auto>
+            </div>
+            <div class="col-8" id="padding_type2_text" style="padding: 130px">
+                Training, Certifications and Skills
+            </div>
+        </div>
+
+        <div class="row format_grid_th">
+            <div class="col-3 pgf_font"> <p>Lic./Cert.</p> </div>
+            <div class="col-3 pgf_font"> <p>State</p> </div>
+            <div class="col-3 pgf_font"> <p>Year</p> </div>
+            <div class="col-3 pgf_font"> <p>Notes</p> </div>
+        </div>
+        <div class="row format_grid_td">
+            <div class="col-3 pgf_font"> <p>NCEES</p> </div>
+            <div class="col-3 pgf_font"> <p>n/a</p> </div>
+            <div class="col-3 pgf_font"> <p>2009</p> </div>
+            <div class="col-3 pgf_font"> <p>Professional Engineer: <br></p>
+                <ol>
+                    <li>CA - 2004</li>
+                    <li>MN - 2009</li>
+                    <li>CO - 2010</li>
+                </ol> </div>
+        </div>
+        <div class="row format_grid_td">
+            <div class="col-3 pgf_font"> <p>HAZWOPER </p></div>
+            <div class="col-3 pgf_font"> <p>CO</p> </div>
+            <div class="col-3 pgf_font"> <p>2005</p> </div>
+            <div class="col-3 pgf_font">
+                <p>40-hour Hazardous Waste Operation and Emergency Response</p> </div>
+        </div>
+
+    </div> <!-- end div for the container -->
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* style sheet for project 0 */
+a[href] {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+th {
+    width: 120px;
+    border-collapse: separate;
+}
+#padding_type1_photo{
+    padding: 30px;
+}
+#padding_type2_text{
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.table_header1{
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: large;
+}
+.table_header2{
+    background-color: lightblue;
+    border-collapse: collapse;
+    background-image: url(project0/asfalt-dark.png);
+}
+
+/* highlight paragraph selection */
+p::selection{
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+    background-color: yellow;
+}
+
+/* define class to remove display for small devices */
+@media (max-width: 750px) {
+    .small_display_none {
+        display: none;
+    }
+}
