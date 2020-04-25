@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
         <!-- need to use Latin Extended A HTML UTF-8 symbol -->
         <title>Gordan Gjerapi&#263: edX-Course Web Programming - Project 0 </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="project0_style.css">
     </head>
     <body>
+    <!-- APPROACH WITHOUT BOOTSTRAP
     <table class="table_header1">
         <tr>
             <th> <a href="index.html" style="font-size: larger; color: blue ">Home</a></th>
@@ -15,9 +18,22 @@
             <th> <a href="skills.html">Certifications and Skills</a></th>
         </tr>
 
-    </table>
+    </table> -->
+       <!-- use Bootstrap basic component "navbar", see https://getbootstrap.com/2.3.2/components.html#navbar -->
+    <div class="navbar">
+        <div class = "navbar-inner">
+            <!-- <a class="brand" href="index.html">Home</a> # in case we want to have a brand web page -->
+            <ul class = "nav">
+                <li class="active col-3">  <a href="index.html" style="font-size: larger;
+                color: blue">Home</a></li>
+                <li class="col-3">  <a href="short_bio.html">Short Bio</a></li>
+                <li class="col-3">  <a href="education.html">Education</a></li>
+                <li class="col-3">  <a href="skills.html">Certifications and Skills</a></li>
+            </ul>
+        </div>
+    </div> <!-- end of div class="navbar" -->
 
-    <table class="table_header2">
+    <table class="table_header2" style="margin:30px">
         <tr>
             <td id="padding_type1_photo">
                  <img src="project0/GG-photo.jpg" alt="Photo" width="200" height=auto>
@@ -28,7 +44,7 @@
         </tr>
     </table>
 
-        <h1> Purpose </h1>
-        EdX - Web Programming Project No. 0
+        <h2 style="margin:30px"> Purpose </h2>
+    <p style="margin:30px"> EdX - Web Programming Project No. 0 </p>
     </body>
 </html>
