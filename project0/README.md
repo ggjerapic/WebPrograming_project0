@@ -66,8 +66,8 @@ The page elements are placed within the bootstrap grid using `row` and `column`
  The examples of SCSS variable definition, nesting and inheritance are included in 
  `project0_SASS_style.scss` stylesheet.  The defined styles were used to control the content on the `skills.html` page.
  
- ### Variable definition
-        $text_size_large: 18px;
+ ### Variable definition 
+       $text_size_large: 18px;
         $text_size_small: 12px;
  ### Nesting example
      /* SCSS nesting                     */
